@@ -58,3 +58,58 @@ console.log(typeof bool);
 ///null, object => false, boolean
 //undefined, undefined => false, boolean
 //NaN , number=> false, boolean
+
+// ************************Operations*************************
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(4/2);
+console.log(5%2);
+console.log(3**2); //9
+
+console.log(2+"2");//22
+console.log(1+2+"2");//32
+console.log(2+"2"+1);//221
+console.log(1+2+"2" +3);//323
+console.log(1+2+"2"+2+3);//3223 -> left to right
+
+
+console.log(+true);//1
+// console.log(true+);//not valid
+console.log(+false);//0
+
+console.log(3+2*10/4);
+console.log((3+2)*10/4);
+
+
+
+let x2 = 3n;
+const y2 = x2++;
+console.log(y2); //3
+console.log(x2); //4
+// let x2 = n10;-> n10 is not defined
+// let x2 = 2n10;-> Error
+
+let num1=10
+num1++
+console.log(`num1 : ${num1}`);
+
+let num2=15;// ";" is required if we use (num2++), bcz Cannot access 'num2' before initialization
+(num2++)
+console.log(`num2 : ${num2}`);
+
+let num3=20;
+// (num3++)++;  // SyntaxError: Invalid left-hand side expression in postfix operation
+// ++(num3++); // SyntaxError: Invalid left-hand side expression in prefix operation
+// (++num3)++; // SyntaxError: Invalid left-hand side expression in postfix operation
+// ++(++num3); //SyntaxError: Invalid left-hand side expression in prefix operation
+console.log(`num3 : ${num3}`);
+
+/*
+The increment operator can only be applied on operands that are 
+references (variables and object properties; i.e. valid assignment targets). 
+++num3 itself evaluates to a value, not a reference, so you cannot chain 
+multiple increment operators together.
+*/
+
