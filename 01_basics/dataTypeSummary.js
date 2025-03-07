@@ -58,3 +58,6 @@ let myFunc = () => {
 };
 
 myFunc()
+
+// Stack <- Premitive Data Type
+// Heap <- Non-Premitive Data Type
